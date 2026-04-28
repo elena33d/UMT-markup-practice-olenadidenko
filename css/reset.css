@@ -17,19 +17,11 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
-}
-
-address {
-  font-style: normal;
+  color: currentColor;
 }
 
 button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  font: inherit;
-  cursor: pointer;
+  font-family: inherit;
 }
 
 img {

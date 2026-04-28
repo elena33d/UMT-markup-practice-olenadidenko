@@ -14,9 +14,8 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
-
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -32,10 +31,10 @@
               <a class="header-menu-link" href="#about">Про нас</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#services">Послуги</a>
+              <a class="header-menu-link" href="#catalog">Каталог</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#products">Товари</a>
+              <a class="header-menu-link" href="#delivery">Доставка</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="#contacts">Контакти</a>
@@ -43,122 +42,113 @@
           </ul>
         </nav>
 
-        <button class="header-button" type="button">Замовити</button>
+        <a class="header-contact" href="tel:+380000000000"
+          >+38 (000) 000-00-00</a
+        >
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero section">
         <div class="container hero-container">
-          <h1 class="hero-title">Flora</h1>
+          <h1 class="hero-title">Квіти для ваших особливих моментів</h1>
           <p class="hero-text">
-            Квіти, які створюють атмосферу. Найкращі композиції для будь-яких
-            подій.
+            Ми створюємо унікальні букети та композиції, які підкреслюють красу
+            та емоції.
           </p>
-          <button class="hero-button" type="button">Переглянути каталог</button>
+          <button class="hero-button" type="button">Замовити букет</button>
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <div class="container about-container">
           <h2 class="about-title">Про нас</h2>
           <p class="about-text">
-            Flora — це майстерня квітів, яка створює сучасні букети та композиції
-            з любов’ю до деталей.
+            Flora — це квіткова майстерня, яка створює стильні композиції для
+            будь-яких подій. Ми працюємо з найсвіжішими квітами та приділяємо
+            увагу кожній деталі.
           </p>
         </div>
       </section>
 
-      <section class="services" id="services">
-        <div class="container services-container">
-          <h2 class="services-title">Послуги</h2>
+      <section class="catalog section" id="catalog">
+        <div class="container catalog-container">
+          <h2 class="catalog-title">Каталог</h2>
 
-          <ul class="services-list">
-            <li class="services-item">
-              <h3 class="services-item-title">Букети</h3>
-              <p class="services-item-text">
-                Створення букетів для свят, подій та особливих моментів.
-              </p>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-1.jpg"
+                alt="Букет з рожевих квітів"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Весняний букет</h3>
+              <p class="catalog-item-text">850 грн</p>
             </li>
 
-            <li class="services-item">
-              <h3 class="services-item-title">Оформлення подій</h3>
-              <p class="services-item-text">
-                Декор весіль, корпоративів, фотозон та інших заходів.
-              </p>
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-2.jpg"
+                alt="Букет з білих квітів"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Ніжність</h3>
+              <p class="catalog-item-text">950 грн</p>
             </li>
 
-            <li class="services-item">
-              <h3 class="services-item-title">Доставка</h3>
-              <p class="services-item-text">
-                Доставка квітів по місту в зручний для вас час.
-              </p>
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-3.jpg"
+                alt="Букет з червоних троянд"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Класичні троянди</h3>
+              <p class="catalog-item-text">1200 грн</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="products" id="products">
-        <div class="container products-container">
-          <h2 class="products-title">Товари</h2>
+      <section class="delivery section" id="delivery">
+        <div class="container delivery-container">
+          <h2 class="delivery-title">Доставка</h2>
 
-          <ul class="products-list">
-            <li class="products-item">
-              <img
-                class="products-image"
-                src="./images/product-1.jpg"
-                alt="Букет квітів"
-                width="300"
-              />
-              <h3 class="products-item-title">Весняний букет</h3>
-              <p class="products-item-text">Ніжний букет із сезонних квітів.</p>
-            </li>
-
-            <li class="products-item">
-              <img
-                class="products-image"
-                src="./images/product-2.jpg"
-                alt="Композиція в коробці"
-                width="300"
-              />
-              <h3 class="products-item-title">Композиція в коробці</h3>
-              <p class="products-item-text">Стильна композиція у подарунок.</p>
-            </li>
-
-            <li class="products-item">
-              <img
-                class="products-image"
-                src="./images/product-3.jpg"
-                alt="Весільний букет"
-                width="300"
-              />
-              <h3 class="products-item-title">Весільний букет</h3>
-              <p class="products-item-text">
-                Ідеальний букет для найважливішого дня.
-              </p>
-            </li>
+          <ul class="delivery-list">
+            <li class="delivery-item">Доставка по місту протягом 2 годин</li>
+            <li class="delivery-item">Самовивіз з нашої майстерні</li>
+            <li class="delivery-item">Доставка по Україні (Нова Пошта)</li>
           </ul>
         </div>
       </section>
 
-      <section class="contacts" id="contacts">
+      <section class="contacts section" id="contacts">
         <div class="container contacts-container">
           <h2 class="contacts-title">Контакти</h2>
 
-          <address class="contacts-address">
-            <ul class="contacts-list">
-              <li class="contacts-item">
-                <a class="contacts-link" href="tel:+380000000000">
-                  +38 (000) 000 00 00
-                </a>
-              </li>
-              <li class="contacts-item">
-                <a class="contacts-link" href="mailto:flora@example.com">
-                  flora@example.com
-                </a>
-              </li>
-            </ul>
-          </address>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+380000000000"
+                >+38 (000) 000-00-00</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:flora@email.com"
+                >flora@email.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a
+                class="contacts-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </main>
