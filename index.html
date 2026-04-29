@@ -71,28 +71,23 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="section about" id="about">
-      <section class="section catalog" id="catalog">
-      <section class="section delivery" id="delivery">
-      <section class="section contacts" id="contacts">
-        <div class="container about-container">
-          <div class="about-content">
-            <h2 class="section-title about-title">Our Passion for Floral Artistry</h2>
-            <p class="about-text">
-              At Flora, we believe that every bouquet tells a story. Our team
-              meticulously crafts each arrangement, blending creativity with the
-              freshest blooms to create stunning pieces for every occasion.
-            </p>
-          </div>
+      .catalog-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 14px 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #d6ff00;
+  font-weight: 600;
+  cursor: pointer;
 
-          <img
-            class="about-image"
-            src="./images/florist-1.jpg"
-            alt="Florist arranging flowers"
-            width="640"
-          />
-        </div>
-      </section>
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+  background-color: #bde600;
+}
 
       <!-- BESTSELLERS -->
       <section class="section bestsellers" id="bestsellers">
