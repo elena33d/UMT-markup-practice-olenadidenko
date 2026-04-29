@@ -22,30 +22,67 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="header-logo" href="./index.html">Flora</a>
+   <header class="header">
+    <div class="container header-container">
+    <nav class="header-nav">
+      <a class="header-logo" href="./index.html">Flora</a>
 
-          <ul class="header-menu">
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#about">About</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#catalog">Catalog</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#delivery">Delivery</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+      <ul class="header-menu">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#about">About</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#catalog">Catalog</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#delivery">Delivery</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
 
-        <a class="header-contact" href="tel:+380000000000">+38 (000) 000-00-00</a>
-      </div>
-    </header>
+    <a class="header-contact" href="tel:+380000000000">+38 (000) 000-00-00</a>
+
+    <button class="menu-open-btn" type="button">
+      <svg class="menu-open-icon" width="28" height="28">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu-container">
+      <button class="menu-close-btn" type="button">
+        <svg class="menu-close-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#about">About</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#catalog">Catalog</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#delivery">Delivery</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="mobile-menu-phone" href="tel:+380000000000"
+        >+38 (000) 000-00-00</a
+      >
+    </div>
+  </div>
+  </header>
 
     <main>
       <!-- HERO -->
@@ -56,24 +93,41 @@
             We create unique bouquets and compositions that highlight beauty and
             emotions.
           </p>
-          <button class="hero-button" type="button">Order a bouquet</button>
+          <button class="hero-button" type="button">Order bouquet</button>
         </div>
       </section>
 
       <!-- ABOUT -->
-      <section class="about" id="about">
+      <section class="section about" id="about">
         <div class="container about-container">
-          <h2 class="about-title">About</h2>
+          <h2 class="about-title">About us</h2>
           <p class="about-text">
-            Flora is a flower workshop that creates stylish compositions for any
-            occasion. We work with the freshest flowers and pay attention to
-            every detail.
+            Flora is a flower studio that creates stylish floral compositions
+            for any occasion. We work with the freshest flowers and pay
+            attention to every detail.
           </p>
+
+          <ul class="about-images">
+            <li class="about-images-item">
+              <img
+                src="./images/florist-1.jpg"
+                alt="Florist working with flowers"
+                width="600"
+              />
+            </li>
+            <li class="about-images-item">
+              <img
+                src="./images/florist-2.jpg"
+                alt="Bouquet creation process"
+                width="600"
+              />
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- CATALOG -->
-      <section class="catalog" id="catalog">
+      <section class="section catalog" id="catalog">
         <div class="container catalog-container">
           <h2 class="catalog-title">Catalog</h2>
 
@@ -82,75 +136,129 @@
               <img
                 class="catalog-image"
                 src="./images/bouquet-1.jpg"
-                alt="Bouquet with pink flowers"
+                alt="Bouquet of pink flowers"
                 width="300"
               />
               <h3 class="catalog-item-title">Spring bouquet</h3>
-              <p class="catalog-item-text">850 UAH</p>
+              <p class="catalog-item-text">$25</p>
             </li>
 
             <li class="catalog-item">
               <img
                 class="catalog-image"
                 src="./images/bouquet-2.jpg"
-                alt="Bouquet with white flowers"
+                alt="Bouquet of white flowers"
                 width="300"
               />
               <h3 class="catalog-item-title">Tenderness</h3>
-              <p class="catalog-item-text">950 UAH</p>
+              <p class="catalog-item-text">$28</p>
             </li>
 
             <li class="catalog-item">
               <img
                 class="catalog-image"
                 src="./images/bouquet-3.jpg"
-                alt="Bouquet with red roses"
+                alt="Bouquet of red roses"
                 width="300"
               />
               <h3 class="catalog-item-title">Classic roses</h3>
-              <p class="catalog-item-text">1200 UAH</p>
+              <p class="catalog-item-text">$35</p>
+            </li>
+
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-4.jpg"
+                alt="Bouquet of mixed flowers"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Bright mood</h3>
+              <p class="catalog-item-text">$30</p>
+            </li>
+
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-5.jpg"
+                alt="Bouquet with tulips"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Tulip charm</h3>
+              <p class="catalog-item-text">$22</p>
+            </li>
+
+            <li class="catalog-item">
+              <img
+                class="catalog-image"
+                src="./images/bouquet-6.jpg"
+                alt="Bouquet of delicate flowers"
+                width="300"
+              />
+              <h3 class="catalog-item-title">Soft pastel</h3>
+              <p class="catalog-item-text">$26</p>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- DELIVERY -->
-      <section class="delivery" id="delivery">
+      <section class="section delivery" id="delivery">
         <div class="container delivery-container">
           <h2 class="delivery-title">Delivery</h2>
 
           <ul class="delivery-list">
-            <li class="delivery-item">Delivery in the city within 2 hours</li>
-            <li class="delivery-item">Pickup from our workshop</li>
-            <li class="delivery-item">Delivery across Ukraine (Nova Poshta)</li>
+            <li class="delivery-item">
+              <span class="delivery-number">01</span>
+              <p class="delivery-text">Delivery within the city in 2 hours</p>
+            </li>
+            <li class="delivery-item">
+              <span class="delivery-number">02</span>
+              <p class="delivery-text">Pickup from our studio</p>
+            </li>
+            <li class="delivery-item">
+              <span class="delivery-number">03</span>
+              <p class="delivery-text">Delivery across Ukraine (Nova Poshta)</p>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- CONTACTS -->
-      <section class="contacts" id="contacts">
+      <section class="section contacts" id="contacts">
         <div class="container contacts-container">
-          <h2 class="contacts-title">Contacts</h2>
+          <h2 class="contacts-title">Get in touch</h2>
 
           <ul class="contacts-list">
             <li class="contacts-item">
-              <a class="contacts-link" href="tel:+380000000000"
-                >+38 (000) 000-00-00</a
-              >
+              <a class="contacts-link" href="tel:+380000000000">
+                <svg class="contacts-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 (000) 000-00-00
+              </a>
             </li>
+
             <li class="contacts-item">
-              <a class="contacts-link" href="mailto:flora@email.com"
-                >flora@email.com</a
-              >
+              <a class="contacts-link" href="mailto:flora@email.com">
+                <svg class="contacts-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                flora@email.com
+              </a>
             </li>
+
             <li class="contacts-item">
               <a
                 class="contacts-link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Instagram</a
               >
+                <svg class="contacts-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+                Instagram
+              </a>
             </li>
           </ul>
         </div>
@@ -161,6 +269,22 @@
     <footer class="footer">
       <div class="container footer-container">
         <a class="footer-logo" href="./index.html">Flora</a>
+
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a
+              class="footer-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
         <p class="footer-text">© 2026 Flora. All rights reserved.</p>
       </div>
     </footer>
