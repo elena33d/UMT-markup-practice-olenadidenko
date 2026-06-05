@@ -633,9 +633,6 @@ body {
   padding: 0;
 }
 
-/* ===========================
-   BOUQUETS
-=========================== */
 .bouquets-text {
   margin-bottom: 24px;
   text-align: center;
@@ -649,23 +646,6 @@ body {
   list-style: none;
 }
 
-@media (min-width: 768px) {
-  .bouquets-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .bouquets-item {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media (min-width: 1440px) {
-  .bouquets-item {
-    width: calc((100% - 72px) / 4);
-  }
-}
-
 .bouquets-item {
   width: 100%;
   border-radius: 10px;
@@ -674,8 +654,20 @@ body {
 }
 
 @media (min-width: 768px) {
+  .bouquets-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .bouquets-item {
+    width: calc((100% - 24px) / 2);
     padding: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bouquets-item {
+    width: calc((100% - 72px) / 4);
   }
 }
 
