@@ -1,0 +1,25 @@
+{
+  "name": "umt-markup-practice-olenadidenko-main-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.18.0",
+    "json-server": "^1.0.0-beta.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elena33d/UMT-markup-practice-olenadidenko.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elena33d/UMT-markup-practice-olenadidenko/issues"
+  },
+  "homepage": "https://github.com/elena33d/UMT-markup-practice-olenadidenko#readme"
+}
