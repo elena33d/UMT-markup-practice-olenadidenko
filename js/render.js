@@ -19,9 +19,8 @@ export function renderBestsellers(items) {
   });
 }
 
-export function renderBouquets(items) {
+function appendBouquets(items) {
   const list = document.querySelector(".bouquets-list");
-  list.innerHTML = "";
   items.forEach((item) => {
     list.insertAdjacentHTML(
       "beforeend",
