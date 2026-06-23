@@ -1,12 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const bouquetsController = require("../controllers/bouquets");
+const bouquetsController = require("../controllers/bouquetsControllers");
 
 router.get("/", bouquetsController.getAll);
-router.get("/:bouquetId", bouquetsController.getById);
+router.get("/:id", bouquetsController.getById);
 router.post("/", bouquetsController.create);
-router.put("/:bouquetId", bouquetsController.update);
-router.delete("/:bouquetId", bouquetsController.remove);
-router.patch("/:bouquetId/favorite", bouquetsController.updateFavorite);
+router.put("/:id", bouquetsController.update);
+router.delete("/:id", bouquetsController.remove);
 
 module.exports = router;
