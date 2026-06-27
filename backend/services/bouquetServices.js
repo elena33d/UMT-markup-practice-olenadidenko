@@ -1,6 +1,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
+const gravatar = require("gravatar");
 
 const bouquetsPath = path.join(__dirname, "../data/bouquets.json");
 
@@ -16,7 +17,9 @@ const getBouquetById = async (id) => {
 
 const addBouquet = async (data) => {
   const bouquets = await listBouquets();
-  const newBouquet = { id: uuidv4(), ...data };
+  const id = uuidv4();
+  const photoURL = gravatar.url(id, { s: "200", r: "pg", d: "mm" }, true);
+  const newBouquet = { id, ...data, photoURL };
   bouquets.push(newBouquet);
   await fs.writeFile(bouquetsPath, JSON.stringify(bouquets, null, 2));
   return newBouquet;
@@ -40,10 +43,15 @@ const updateBouquet = async (id, data) => {
   return bouquets[index];
 };
 
+const updatePhoto = async (id, photoURL) => {
+  return await updateBouquet(id, { photoURL });
+};
+
 module.exports = {
   listBouquets,
   getBouquetById,
   addBouquet,
   removeBouquets,
   updateBouquet,
+  updatePhoto,
 };

@@ -6,5 +6,14 @@
     "description": "A soft and radiant arrangement",
     "price": "$55",
     "favourite": false
+  },
+  {
+    "id": "1ee91bd0-fa20-492b-923e-38926e52baf9",
+    "photo": "./images/bouquet-5@1x.jpg",
+    "title": "Peach Meadow",
+    "description": "A soft and radiant arrangement",
+    "price": "$55",
+    "favourite": false,
+    "photoURL": "https://s.gravatar.com/avatar/94ce5227c977b178acbf63b23ce6c0f9?s=200&r=pg&d=mm"
   }
 ]
